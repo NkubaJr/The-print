@@ -103,10 +103,19 @@ EOF
 cat << 'EOF' > "$dir_main/startup.sh"
 #!/bin/bash
 echo 'Starting submission reminder app...'
-bash "../submission_reminder_NkubaJr/app/reminder.sh"
+bash "../submission_reminder_IsimbiNelly/app/reminder.sh"
 EOF
 
 # submissions.txt
+cat << 'EOF' > "$dir_main/assets/submissions.txt"
+#!/bin/bash
+student, assignment, submission status
+Chinemerem, Shell Navigation, not submitted
+Chiagoziem, Git, submitted
+Divine, Shell Navigation, not submitted
+Anissa, Shell Basics, submitted
+EOF
+# submissions.txt being populated
 cat << 'EOF' > "$dir_main/assets/submissions.txt"
 #!/bin/bash
 student, assignment, submission status
