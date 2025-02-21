@@ -106,7 +106,17 @@ echo 'Starting submission reminder app...'
 bash "../submission_reminder_NkubaJr/app/reminder.sh"
 EOF
 
+# submissions.txt being populated
+cat << 'EOF' > "$dir_main/assets/submissions.txt"
+#!/bin/bash
+student, assignment, submission status
+Chinemerem, Shell Navigation, not submitted
+Chiagoziem, Git, submitted
+Divine, Shell Navigation, not submitted
+Anissa, Shell Basics, submitted
+EOF
+
 # execute these scripts
 chmod +x "$dir_main/modules/functions.sh"
 chmod +x "$dir_main/startup.sh"
-chmod +x "$dir_main/app/reminder.sh" i
+chmod +x "$dir_main/app/reminder.sh" 
