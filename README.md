@@ -1,4 +1,4 @@
-After cloning the github repo created using the command 
+After cloning the github repo created using the command git clone
 ```bash
 cd  submission_reminder_IsimbiNelly
 ```
