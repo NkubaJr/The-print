@@ -80,7 +80,7 @@ cat << 'EOF' > "$dir_main/modules/functions.sh"
 }
 EOF
 
-# reminder.sh being populated
+# reminder.sh 
 cat << 'EOF' > "$dir_main/app/reminder.sh"
 #!/bin/bash
 
@@ -99,14 +99,14 @@ echo "--------------------------------------------"
 check_submissions $submissions_file
 EOF
 
-# startup.sh being populated
+# startup.sh 
 cat << 'EOF' > "$dir_main/startup.sh"
 #!/bin/bash
 echo 'Starting submission reminder app...'
 bash "../submission_reminder_NkubaJr/app/reminder.sh"
 EOF
 
-# submissions.txt being populated
+# submissions.txt
 cat << 'EOF' > "$dir_main/assets/submissions.txt"
 #!/bin/bash
 student, assignment, submission status
@@ -116,7 +116,7 @@ Divine, Shell Navigation, not submitted
 Anissa, Shell Basics, submitted
 EOF
 
-# execute these scripts
+# script execution
 chmod +x "$dir_main/modules/functions.sh"
 chmod +x "$dir_main/startup.sh"
 chmod +x "$dir_main/app/reminder.sh" 
