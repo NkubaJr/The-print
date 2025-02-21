@@ -10,13 +10,13 @@ dir_main="submission_reminder_${USER_NAME}"
 # Create the main application directory
 mkdir -p "$dir_main"
 
-# Create necessary subdirectories
+# Create subdirectories in the main directory
 mkdir -p "$dir_main/modules"
 mkdir -p "$dir_main/config"
 mkdir -p "$dir_main/assets"
 mkdir -p "$dir_main/app"
 
-#Create the needed files 
+#Create the files in the created subdirectories
 touch "$dir_main/modules/functions.sh"
 touch "$dir_main/config/config.env"
 touch "$dir_main/assets/submissions.txt"
